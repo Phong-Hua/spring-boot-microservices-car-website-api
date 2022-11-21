@@ -15,5 +15,4 @@ public class PricingServiceApplication {
     public static void main(String[] args) {
         SpringApplication.run(PricingServiceApplication.class, args);
     }
-
 }
