@@ -49,8 +49,9 @@ class CarController {
     Resources<Resource<Car>> list() {
         List<Resource<Car>> resources = carService.list().stream().map(assembler::toResource)
                 .collect(Collectors.toList());
-        return new Resources<>(resources,
+        Resources<Resource<Car>> result = new Resources<>(resources,
                 linkTo(methodOn(CarController.class).list()).withSelfRel());
+        return result;
     }
 
     /**
