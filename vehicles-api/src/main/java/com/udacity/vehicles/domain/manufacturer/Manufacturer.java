@@ -27,4 +27,10 @@ public class Manufacturer {
     public String getName() {
         return name;
     }
+
+	@Override
+	public String toString() {
+		return "Manufacturer [code=" + code + ", name=" + name + "]";
+	}
+    
 }
